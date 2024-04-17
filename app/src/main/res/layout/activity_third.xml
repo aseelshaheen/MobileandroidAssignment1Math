@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B5E1E6"
+    android:gravity="center|top"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".ThirdActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="The Rate Of Change"
+        android:textColor="#021370"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="The rate of change, represented as Δy/Δx, measures the ratio of the change in the dependent variable (y) to the change in the independent variable (x) over a given interval. It quantifies how much y changes for every unit change in x."
+        android:textColor="#083355"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Rate Of Change = (F(X2) - F(X1)) / (X2 - X1)"
+        android:textColor="#083355"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Example:  Find the average rate of change of f(x) from x = 3 to x = 5, Where f(x) = X^2 + 5"
+        android:textColor="#083355"
+        android:textSize="16dp" />
+
+    <EditText
+        android:id="@+id/edtResult1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Enter The Answer Here"
+        android:inputType="text"
+        android:textColor="#152995" />
+
+    <TextView
+        android:id="@+id/txFeedBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="TextView"
+        android:textColor="#4F065C"
+        android:textSize="20dp"
+        android:visibility="invisible" />
+
+    <CheckBox
+        android:id="@+id/cboxResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="See The Result"
+        android:textColor="#083355" />
+
+    <Button
+        android:id="@+id/btnGo2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#083355"
+        android:text="Go To The Next Page" />
+
+    <Button
+        android:id="@+id/btnPrevious2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#083355"
+        android:text="Go To The Menu Page" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>

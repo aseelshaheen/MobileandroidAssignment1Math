@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B5E1E6"
+    android:gravity="top|center"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".FifthActivity">
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Extreme Values"
+        android:textColor="#021370"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="The function (f(x) = x^2 + 1) has no maximum value over the entire real number line, as it grows infinitely as ( x ) approaches positive or negative infinity. However, it does have a minimum value of 1, which occurs at ( x = 0 ). This value is known as the absolute minimum of the function. Conversely, the function lacks an absolute maximum value."
+        android:textColor="#021370"
+        android:textSize="20dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/extremevalues" />
+
+    <Button
+        android:id="@+id/btnGo4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FFFFFF"
+        android:text="Go To The Next Page"
+        android:textColor="#021370"
+        android:textSize="15dp" />
+
+    <Button
+        android:id="@+id/btnPrevious4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#FAF8F8"
+        android:text="Back To The Menu Page"
+        android:textColor="#021370"
+        android:textSize="15dp" />
+</androidx.appcompat.widget.LinearLayoutCompat>

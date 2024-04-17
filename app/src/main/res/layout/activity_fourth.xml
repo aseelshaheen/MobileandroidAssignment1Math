@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B5E1E6"
+    android:gravity="top|center"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".FourthActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="First Derivative"
+        android:textColor="#021370"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="The first derivative of the function f(x), which we write as f 0 (x) or as df dx , is the slope of the tangent line to the function at the point x. "
+        android:textColor="#083355"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="For example, take f(x) = 3x^3 − 6x^2 + 2x − 1. The derivative of f(x) is 9x^2 − 12x + 2"
+        android:textColor="#083355"
+        android:textSize="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Answer This Question : "
+        android:textColor="#083355"
+        android:textSize="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="If f(x) = 6x^4 + 3x^2 , what is the derivative of f(3)"
+        android:textColor="#083355"
+        android:textSize="20dp" />
+
+    <RadioGroup
+        android:id="@+id/grpResults"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/btnRadio666"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="666         " />
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="662       " />
+
+        <RadioButton
+            android:id="@+id/radioButton3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="652        " />
+
+    </RadioGroup>
+
+    <CheckBox
+        android:id="@+id/cboxResult3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="See The Correct Answer"
+        android:textColor="#083355" />
+
+    <TextView
+        android:id="@+id/txResult3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textColor="#4F065C"
+        android:textSize="20dp"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/btnGo3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#FFFFFF"
+        android:text="Go To The Next Topic"
+        android:textColor="#021370"
+        android:textSize="15dp" />
+
+    <Button
+        android:id="@+id/btnPrevious3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#FFFFFF"
+        android:text="Go To The Menu Page"
+        android:textColor="#021370"
+        android:textSize="15dp" />
+</androidx.appcompat.widget.LinearLayoutCompat>
