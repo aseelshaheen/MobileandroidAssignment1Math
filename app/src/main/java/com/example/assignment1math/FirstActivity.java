@@ -18,7 +18,7 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 public class FirstActivity extends AppCompatActivity {
-    public static final String KEY_USERNAME = "123";
+    public static final String KEY_USERNAME = "aseel";
     public static final String KEY_PASSWORD = "123";
     public static final String KEY_FLAG = "FLAG";
     private EditText edtUsername;
@@ -49,7 +49,27 @@ public class FirstActivity extends AppCompatActivity {
         btnSignIn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                btnLoginOnClick(v);
+                String enteredUsername = edtUsername.getText().toString();
+                String enteredPassword = edtPassword.getText().toString();
+
+                if (chkRemember.isChecked()) {  // save username and password to SharedPreferences
+
+                    SharedPreferences.Editor editor = sharedPreferences.edit();
+                    editor.putString(KEY_USERNAME, enteredUsername);
+                    editor.putString(KEY_PASSWORD, enteredPassword);
+                    editor.putBoolean(KEY_FLAG, true);
+                    editor.apply();
+                } else {
+                    // clear username and password from SharedPreferences
+                    SharedPreferences.Editor editor = sharedPreferences.edit();
+                    editor.remove(KEY_USERNAME);
+                    editor.remove(KEY_PASSWORD);
+                    editor.putBoolean(KEY_FLAG, false);
+                    editor.apply();
+                }
+
+                Intent intent = new Intent(FirstActivity.this, SecondActivity.class);  // start SecondActivity
+                startActivity(intent);
             }
         });
     }
@@ -63,30 +83,6 @@ public class FirstActivity extends AppCompatActivity {
             edtPassword.setText(savedPassword);
             chkRemember.setChecked(true);
         }
-    }
-
-    public void btnLoginOnClick(View view) {
-        String enteredUsername = edtUsername.getText().toString();
-        String enteredPassword = edtPassword.getText().toString();
-
-        if (chkRemember.isChecked()) {  // save username and password to SharedPreferences
-
-            SharedPreferences.Editor editor = sharedPreferences.edit();
-            editor.putString(KEY_USERNAME, enteredUsername);
-            editor.putString(KEY_PASSWORD, enteredPassword);
-            editor.putBoolean(KEY_FLAG, true);
-            editor.apply();
-        } else {
-            // clear username and password from SharedPreferences
-            SharedPreferences.Editor editor = sharedPreferences.edit();
-            editor.remove(KEY_USERNAME);
-            editor.remove(KEY_PASSWORD);
-            editor.putBoolean(KEY_FLAG, false);
-            editor.apply();
-        }
-
-        Intent intent = new Intent(FirstActivity.this, SecondActivity.class);  // start SecondActivity
-        startActivity(intent);
     }
 
 //    @Override
