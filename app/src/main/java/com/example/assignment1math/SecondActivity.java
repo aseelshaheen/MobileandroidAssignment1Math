@@ -25,13 +25,14 @@ public class SecondActivity extends AppCompatActivity {
     }
 
     public void setupViews(){
+        //store the topics in the list view
         String [] contents = {"Rate Of Change","First Derivative","Extreme Values","Indefinite Integral"};
         ArrayAdapter<String> adapter = new ArrayAdapter<>(this,android.R.layout.simple_list_item_1 ,contents);
         listContents = findViewById(R.id.listContents);
         listContents.setAdapter(adapter);
 
         listContents.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
+            @Override   //move to each activity
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 String item = (String) parent.getItemAtPosition(position);
                 if ("Rate Of Change".equals(item)) {
@@ -53,4 +54,9 @@ public class SecondActivity extends AppCompatActivity {
 
 
     }
+//    @Override
+//    protected void onStop() {
+//        super.onStop();
+//        moveTaskToBack(true); // move the app to the background
+//    }
 }

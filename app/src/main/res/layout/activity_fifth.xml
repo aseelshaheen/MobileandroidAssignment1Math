@@ -15,17 +15,16 @@
         android:id="@+id/textView10"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
         android:text="Extreme Values"
-        android:textColor="#021370"
-        android:textSize="30dp" />
+
+        style="@style/CustomTextStyle"/> />
 
     <TextView
         android:id="@+id/textView11"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:text="The function (f(x) = x^2 + 1) has no maximum value over the entire real number line, as it grows infinitely as ( x ) approaches positive or negative infinity. However, it does have a minimum value of 1, which occurs at ( x = 0 ). This value is known as the absolute minimum of the function. Conversely, the function lacks an absolute maximum value."
+        android:text="What are the extreme values (minimum ,maximum respectively) for the function (f(x) = x^2 + 1)"
         android:textColor="#021370"
         android:textSize="20dp" />
 
@@ -35,10 +34,52 @@
         android:layout_height="wrap_content"
         app:srcCompat="@drawable/extremevalues" />
 
+    <RadioGroup
+        android:id="@+id/grpResult5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="No minimum , 5" />
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1,No maximum" />
+
+        <RadioButton
+            android:id="@+id/radioButton4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1,5" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/txResult5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:textColor="#4F065C"
+        android:textSize="20dp"
+        android:visibility="invisible" />
+
+    <CheckBox
+        android:id="@+id/cBoxResult5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="See The Answer" />
+
     <Button
         android:id="@+id/btnGo4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
         android:backgroundTint="#FFFFFF"
         android:text="Go To The Next Page"
         android:textColor="#021370"
@@ -49,7 +90,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:backgroundTint="#FAF8F8"
+        android:backgroundTint="#FFFFFF"
         android:text="Back To The Menu Page"
         android:textColor="#021370"
         android:textSize="15dp" />

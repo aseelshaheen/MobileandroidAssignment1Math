@@ -29,12 +29,16 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // Create an Intent to start the SecondActivity
-                Intent intent = new Intent(MainActivity.this, SecondActivity.class);
+                Intent intent = new Intent(MainActivity.this, FirstActivity.class);
                 startActivity(intent); // Start the SecondActivity
             }
         });
     }
-
+//    @Override
+//    protected void onStop() {
+//        super.onStop();
+//        moveTaskToBack(true); // move the app to the background
+//    }
 
 
 }

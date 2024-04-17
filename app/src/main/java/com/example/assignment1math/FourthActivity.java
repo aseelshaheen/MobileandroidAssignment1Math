@@ -76,4 +76,10 @@ public class FourthActivity extends AppCompatActivity {
 
 
     }
+
+//    @Override
+//    protected void onStop() {
+//        super.onStop();
+//        moveTaskToBack(true); // move the app to the background
+//    }
 }

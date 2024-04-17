@@ -1,10 +1,77 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#B5E1E6"
+    android:gravity="center|top"
+    android:orientation="vertical"
+    android:padding="10dp"
     tools:context=".SixthActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Indefinite Integral"
+        style="@style/CustomTextStyle"/>
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="The indefinite integral, often denoted by ∫ f(x) dx, represents a collection of functions that differ by a constant. It's used to find the general solution to a differential equation and enables the calculation of definite integrals using the Fundamental Theorem of Calculus."
+        android:textColor="#021370"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Evaluate the following indefinite integral."
+        android:textColor="#021370"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="∫ x 4 + 3 x − 9 d x"
+        android:textColor="#021370"
+        android:textSize="18dp" />
+
+    <Spinner
+        android:id="@+id/spnResults"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:id="@+id/txResult6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textColor="#4F065C"
+        android:textSize="20dp" />
+
+    <CheckBox
+        android:id="@+id/cboxResult6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="See The Result" />
+
+    <Button
+        android:id="@+id/btnPrevious6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="#FFFFFF"
+        android:text="Back To Menu Page"
+        android:textColor="#021370"
+        android:textSize="15dp" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>

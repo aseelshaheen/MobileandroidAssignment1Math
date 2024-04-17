@@ -15,10 +15,8 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
         android:text="First Derivative"
-        android:textColor="#021370"
-        android:textSize="30dp" />
+        style="@style/CustomTextStyle"/>
 
     <TextView
         android:id="@+id/textView8"
